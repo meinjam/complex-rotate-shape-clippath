@@ -1,0 +1,101 @@
+@font-face {
+    font-family: rosellinda;
+    src: url('./Rosellinda\ Alyamore.otf');
+}
+
+:root {
+    --primary-color: #2b4029;
+    --img-width: 350px;
+}
+
+h1.name {
+    font-family: rosellinda;
+    font-size: 85px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-155%, 0);
+    color: #cdd2db;
+}
+
+#showcase {
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+#showcase .bg_one {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: -2;
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%);
+}
+
+#showcase .bg_one .circle1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    width: var(--img-width);
+    height: var(--img-width);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#showcase .bg_two {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -2;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+#showcase .bg_two .circle2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--primary-color);
+    width: var(--img-width);
+    height: var(--img-width);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#showcase .img-div {
+    width: var(--img-width);
+    height: var(--img-width);
+    position: relative;
+    box-shadow: 0px 0px 700px 0px rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+#showcase img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-shadow: 0px 0px 125px 0px rgb(0 0 0 / 50%);
+}
+
+/* #showcase .img-div::before {
+    content: 'Css';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 120px;
+    color: #e8e8e8;
+} */
